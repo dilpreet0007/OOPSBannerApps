@@ -1,15 +1,19 @@
 /*
-	Feature UC2 - Print OOPS
+	Feature UC3 - Print OOPS
 	 @auther Developer
-	 @version 2.0
+	 @version 3.0
 
 */
 
-public class OOPSBannerApp2{
+public class OOPSBannerAppThree{
 	public static void main(String[] args){
-		System.out.println(" **  " + " **  " + "**** " + "**** ");
-		System.out.println("*  * " + "*  * " + "*  * " + "**   ");
-		System.out.println("*  * " + "*  * " + "**** " + "  ** ");
-		System.out.println(" **  " + " **  " + "*    " + "**** ");
+		System.out.println(String.join(" ", "   ***   ", "   *****  "));
+		System.out.println(String.join(" ", " **   ** ", " **       "));
+		System.out.println(String.join(" ", "**     **", "**        "));
+		System.out.println(String.join(" ", "**     **", "   *****  "));
+		System.out.println(String.join(" ", "**     **", "        **"));
+		System.out.println(String.join(" ", " **   ** ", "      **  "));
+		System.out.println(String.join(" ", "   ***   ", "  *****   "));
 	}	
+} 
 } 
