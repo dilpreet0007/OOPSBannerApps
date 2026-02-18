@@ -1,19 +1,19 @@
-/*
-	Feature UC3 - Print OOPS
-	 @auther Developer
-	 @version 3.0
 
-*/
-
-public class OOPSBannerAppThree{
+public class Practice{
 	public static void main(String[] args){
-		System.out.println(String.join(" ", "   ***   ", "   *****  "));
-		System.out.println(String.join(" ", " **   ** ", " **       "));
-		System.out.println(String.join(" ", "**     **", "**        "));
-		System.out.println(String.join(" ", "**     **", "   *****  "));
-		System.out.println(String.join(" ", "**     **", "        **"));
-		System.out.println(String.join(" ", " **   ** ", "      **  "));
-		System.out.println(String.join(" ", "   ***   ", "  *****   "));
-	}	
-} 
+		String[] arr = new String[7];
+		
+		arr[0] = String.join(" ", "   ****   ", "   *****   ");
+		arr[1] = String.join(" ", " **    ** ", "   **      ");
+		arr[2] = String.join(" ", " **    ** ", "   **      ");
+		arr[3] = String.join(" ", " **    ** ", "   *****   ");
+		arr[4] = String.join(" ", " **    ** ", "      **   ");
+		arr[5] = String.join(" ", " **    ** ", "      **   ");
+		arr[6] = String.join(" ", "   ****   ", "   *****   ");
+		
+		for(String s : arr){
+			System.out.println(s);
+		}
+		
+ 	}	
 } 
