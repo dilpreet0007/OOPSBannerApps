@@ -1,7 +1,7 @@
 
 public class OOPSBannerApp{
 	public static void main(String[] args){
-		String[] arr = {"   ****      *****   "," **    **    **      "," **    **    **      "," **    **    *****   "," **    **       **   "," **    **       **   ","   ****      *****   "};
+		String[] arr = getPattern();
 		
 		
 		for(String s : arr){
@@ -9,4 +9,12 @@ public class OOPSBannerApp{
 		}
 		
  	}	
+	public static String[] getPattern(){
+		return new String[]{
+			" *** ",
+			"*   *",
+			"*   *",
+			" *** "
+		};
+	}
 } 
