@@ -1,20 +1,28 @@
 
 public class OOPSBannerApp{
 	public static void main(String[] args){
-		String[] arr = getPattern();
 		
+		Pattern pattern = new Pattern();
 		
-		for(String s : arr){
-			System.out.println(s);
-		}
+		Pattern.Oops oops = new Pattern().new Oops();
+		
+		oops.printOOPS();
 		
  	}	
-	public static String[] getPattern(){
-		return new String[]{
-			" *** ",
-			"*   *",
-			"*   *",
-			" *** "
-		};
-	}
 } 
+class Pattern{
+	static String[] arr ={
+		"*****  *****  *****  *****",
+		"*   *  *   *  *   *  *    ",
+		"*   *  *   *  *****  *****",
+		"*   *  *   *  *          *",
+		"*****  *****  *      *****"
+	};
+	class Oops{
+		 void printOOPS(){ 
+			for(int i=0;i<arr.length;i++){
+				System.out.println(arr[i]);
+			}
+		 }
+	}
+}
