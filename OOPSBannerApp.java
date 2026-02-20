@@ -1,28 +1,44 @@
-
+import java.util.*;
 public class OOPSBannerApp{
+	public static HashMap<Character,String[]> createHashMap(){
+		HashMap<Character,String[]> map = new HashMap<>();
+		
+		map.put('O',new String[]{
+			"*****",
+			"*   *",
+			"*   *",
+			"*   *",
+			"*****"
+		});
+		map.put('S',new String[]{
+			"*****",
+			"*    ",
+			"*****",
+			"    *",
+			"*****"
+		});
+		
+		return map;
+	}
+	
+	public static void printMessage(String s,HashMap<Character,String[]> map){
+		
+		int h = map.get('O').length;
+		
+		for(int i=0;i<h;i++){
+			StringBuilder sb = new StringBuilder();
+			for(int j=0;j<s.length();j++){
+				String[] pattern = map.get(s.charAt(j));
+				sb.append(pattern[i]).append(" ");
+			}
+			System.out.println(sb.toString());
+		}
+		
+	}
 	public static void main(String[] args){
-		
-		Pattern pattern = new Pattern();
-		
-		Pattern.Oops oops = new Pattern().new Oops();
-		
-		oops.printOOPS();
+		String s = "OS";
+		HashMap<Character,String[]> map = createHashMap();
+		printMessage(s,map);
 		
  	}	
 } 
-class Pattern{
-	static String[] arr ={
-		"*****  *****  *****  *****",
-		"*   *  *   *  *   *  *    ",
-		"*   *  *   *  *****  *****",
-		"*   *  *   *  *          *",
-		"*****  *****  *      *****"
-	};
-	class Oops{
-		 void printOOPS(){ 
-			for(int i=0;i<arr.length;i++){
-				System.out.println(arr[i]);
-			}
-		 }
-	}
-}
